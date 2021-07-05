@@ -8,20 +8,15 @@ const ingredients = [
   'Приправы',
 ];
 
-const ulList = document.getElementById("ingredients");
+const listIngredients = document.querySelector("#ingredients");
+const arr = [];
 const ingrediendFoods = ingredients.forEach(ingredient => {
   const items = document.createElement("li");
-  items.innerHTML = ingredient;
-  ulList.append(items);
+  items.textContent = ingredient;
+ listIngredients.appendChild(items);
 
 });
 
 console.log(ingrediendFoods);
-
-
-
-
-
-
 
 
